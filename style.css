@@ -1,0 +1,151 @@
+#content{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#one{
+  display: flex;
+  justify-content: center;
+}
+
+#two{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#text1{
+  font-size: 4rem;
+  color: white;
+  font-family: 'Squada One', cursive;
+}
+
+#text1:hover{
+  color: #ceb33a;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 410;
+}
+
+#text1:active{
+  color: green;
+}
+
+.hex-copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#copy-area{
+  color: white;
+  font-size: 40px;
+  background: transparent;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+#copied{
+  font-size: 20px;
+  background-color: #000;
+  position: absolute;
+  -webkit-text-stroke-width: 0px;
+}
+
+#hover-btn{
+  font-size: 1.4rem;
+  background: rgb(21, 21, 21);
+  color: rgb(255, 255, 255);
+  font-family: 'Kalam', cursive;
+  padding: 0.6rem;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 100px;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: white;
+}
+
+#hover-btn:hover{
+  color: #ceb33a;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: rgb(19,19,19);
+}
+
+#hover-btn:active{
+  color: grey;
+}
+
+.footer{
+  width: 35%;
+  position: absolute;
+  top: 93%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+
+.footer h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Zilla Slab', serif;
+  
+}
+
+.footer h4:hover{
+  color: #ceb33a;
+  font-weight: 1000;
+}
+
+
+/*previous colors*/
+#previous{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 60px);
+}
+
+
+.container {
+  flex-flow: row wrap; 
+  padding-left: 0px;
+}
+
+
+hr{
+  border-color: transparent;
+}
+
+
+/******for smaller screens******/
+
+@media(max-width: 500px) {  
+  
+  #text1{
+    font-size: 40px;
+  }
+
+  #copy-icon-btn{
+    font-size: 30px;
+  }
+
+  #hover-btn{
+    font-size: 1rem;
+    padding: 3px;
+  }
+  
+  #hover-btn:hover{
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+  }
+} 
+
+
