@@ -5,47 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Button Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="materials/favicon.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet"> <!--HexCode font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Footer Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet"> <!--Button Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet"><!--Footer Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/260dc2fe64.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" type="image/png" href="favicon.png"/>
-    <title>Hex-Code Generator</title>
+    <title>Color Generator</title>
 </head>
 <body class = "background-all">
-
     <div id = "content">
-        <div class="wrapper" id="one">
-            <button id="hover-btn" onclick="hexcodeFunc()">
+        <div class="wrapper">
+            <button id="hover-btn" onclick="hexcodeToPage()">
                 Generate Color
             </button>
         </div>
-        <div class="hex-copy" id="two">
+        <div class="hex-copy">
             <button id="copy-area">
-                <div class="result" id="text1" onclick="copy('text1')"></div>
-                <p id="copied"></p>
+                <div class="result" id="text1" onclick="copy()"></div>
             </button>
         </div>    
     </div>
 
-
     <!----Previous Colors---->
+    <div id="previous-container">
+        <div id="previous" class="container"></div>
+    </div>
     
-    <div id="previous" class="container" style="border-color: black";"></div>
     
-
     <!----Footer---->
 
     <section class="footer">
-        <div>
-            <h4>by Hasan Solak</h4>
+        <div id="name-link">
+            <a href="https://github.com/h-solak" id="link" target="blank">
+                by Hasan Solak
+                <i class="fab fa-github"></i>
+            </a>
         </div>
     </section>
-
 
     <script src="index.js"></script>
 
