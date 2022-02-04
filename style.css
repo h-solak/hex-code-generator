@@ -1,10 +1,8 @@
 #content{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left:50%;
   transform: translate(-50%,-50%);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 
 #one{
@@ -12,24 +10,39 @@
   justify-content: center;
 }
 
-#two{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+#hover-btn{
+  font-size: 1.4rem;
+  background: rgb(21, 21, 21);
+  color: rgb(255, 255, 255);
+  font-family: 'Kalam', cursive;
+  padding: 0.3rem;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 100px;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: white;
 }
 
+#hover-btn:hover{
+  color: #ceb33a;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: rgb(19,19,19);
+}
+
+#hover-btn:active{
+  color: grey;
+}
+
+/*current color*/
 #text1{
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: white;
-  font-family: 'Squada One', cursive;
+  font-family: 'Bree Serif', serif;
 }
 
 #text1:hover{
   color: #ceb33a;
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: 410;
 }
 
 #text1:active{
@@ -51,37 +64,6 @@
   cursor: pointer;
 }
 
-#copied{
-  font-size: 20px;
-  background-color: #000;
-  position: absolute;
-  -webkit-text-stroke-width: 0px;
-}
-
-#hover-btn{
-  font-size: 1.4rem;
-  background: rgb(21, 21, 21);
-  color: rgb(255, 255, 255);
-  font-family: 'Kalam', cursive;
-  padding: 0.6rem;
-  transition: 0.3s;
-  cursor: pointer;
-  border-radius: 100px;
-  -webkit-text-stroke-width: 0.01px;
-  -webkit-text-stroke-color: white;
-}
-
-#hover-btn:hover{
-  color: #ceb33a;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  background: rgb(19,19,19);
-}
-
-#hover-btn:active{
-  color: grey;
-}
-
 .footer{
   width: 35%;
   position: absolute;
@@ -91,42 +73,52 @@
   text-align: center;
 }
 
+i{
+  font-size: 22px;
+}
 
-.footer h4{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#name-link{
+  margin: 10px;
+}
+
+#link{
   color: white;
+  text-decoration: none;
   font-family: 'Zilla Slab', serif;
-  
 }
 
-.footer h4:hover{
+#link:hover{
   color: #ceb33a;
-  font-weight: 1000;
 }
-
 
 /*previous colors*/
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  row-gap: 5px;
+}
+
 #previous{
   display: grid;
-  grid-template-columns: repeat(auto-fit, 60px);
+  grid-template-columns: repeat(auto-fill, 100px) 80px;
+  font-family: 'Kalam', cursive;
 }
 
-
-.container {
-  flex-flow: row wrap; 
-  padding-left: 0px;
+h6{
+  font-size: 15px;
+  animation: blinker 1.5s  infinite;
 }
 
-
-hr{
-  border-color: transparent;
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
-
-/******for smaller screens******/
-
+/**for smaller screens**/
 @media(max-width: 500px) {  
   
   #text1{
@@ -146,6 +138,9 @@ hr{
     padding-right: 0.3rem;
     padding-left: 0.3rem;
   }
-} 
 
-
+  .footer{
+    width: 50%;
+    font-size: 15px;
+  }
+}

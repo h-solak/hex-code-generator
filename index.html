@@ -7,45 +7,47 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Button Font-->
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet"> <!--HexCode font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Footer Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet"><!--Footer Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/260dc2fe64.js" crossorigin="anonymous"></script>
 
     <link rel="icon" type="image/png" href="favicon.png"/>
     <title>Hex-Code Generator</title>
 </head>
 <body class = "background-all">
-
     <div id = "content">
         <div class="wrapper" id="one">
-            <button id="hover-btn" onclick="hexcodeFunc()">
+            <button id="hover-btn" onclick="hexcodeToPage()">
                 Generate Color
             </button>
         </div>
-        <div class="hex-copy" id="two">
+        <div class="hex-copy">
             <button id="copy-area">
-                <div class="result" id="text1" onclick="copy('text1')"></div>
+                <div class="result" id="text1" onclick="copy()"></div>
                 <p id="copied"></p>
             </button>
         </div>    
     </div>
 
-
     <!----Previous Colors---->
+    <div id="previous" class="container"></div>
     
-    <div id="previous" class="container" style="border-color: black";"></div>
-    
-
     <!----Footer---->
 
     <section class="footer">
+        <div id="name-link">
+            <a href="https://github.com/h-solak" id="link" target="blank">
+                by Hasan Solak
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!--Website user counter by https://www.counters-free.net/-->
         <div>
-            <h4>by Hasan Solak</h4>
+            <script type="text/javascript" src="https://www.counters-free.net/count/9nkr"></script><br>
+            <a href='https://www.versicherungen.at/hausversicherung-rechner/'>Hausversicherung Rechner</a>
+            <script type='text/javascript' src='https://whomania.com/ctr?id=292023320d878b9827c84c28540fd8b8c13ddc24'></script>
         </div>
     </section>
-
 
     <script src="index.js"></script>
 
