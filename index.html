@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="materials/favicon.png"/>
+    <link rel="icon" type="image/png" href="materials/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet"> <!--Button Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet"><!--Footer Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <!--Button Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+    <!--Footer Font-->
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/260dc2fe64.js" crossorigin="anonymous"></script>
 
     <title>Color Generator</title>
 </head>
-<body class = "background-all">
-    <div id = "content">
+
+<body class="background-all">
+    <div id="content">
         <div class="wrapper">
             <button id="hover-btn" onclick="hexcodeToPage()">
                 Generate Color
             </button>
+
         </div>
         <div class="hex-copy">
             <button id="copy-area">
                 <div class="result" id="text1" onclick="copy()"></div>
             </button>
-        </div>    
+        </div>
     </div>
 
     <!----Previous Colors---->
     <div id="previous-container">
         <div id="previous" class="container"></div>
     </div>
-    
-    
+
+    <!--Fun Feature-->
+    <span id="go-crazy" onclick="goCrazy()" title="Just for fun">
+        Loop
+    </span>
+
+    <audio id="music" loop="loop">
+        <source src="./materials/notimeforcautionhanszimmer.mp3" type="audio/mpeg">
+    </audio>
+
+
     <!----Footer---->
 
     <section class="footer">
         <div id="name-link">
-            <a href="https://github.com/h-solak" id="link" target="blank">
+            <a href="https://github.com/h-solak" id="link" target="_blank" rel="noreferrer">
                 by Hasan Solak
                 <i class="fab fa-github"></i>
             </a>
@@ -48,4 +62,5 @@
     <script src="index.js"></script>
 
 </body>
+
 </html>
